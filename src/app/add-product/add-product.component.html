@@ -1,0 +1,29 @@
+<div class="container">
+    <form [formGroup]="productform">
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text bg-info text-white">Id</span>
+            </div>
+            <input type="text" aria-label="id" class="form-control" formControlName="id">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text bg-warning text-white">Title</span>
+            </div>
+            <input type="text" aria-label="title" class="form-control" formControlName="title">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text bg-success text-white">Price</span>
+            </div>
+            <input type="text" aria-label="price" class="form-control" formControlName="price">
+        </div>
+
+        <div class="mb-3">
+            <input type="submit" aria-label="add" class="btn btn-danger" value="Add" (click)="add()">
+        </div>
+    </form>
+</div>

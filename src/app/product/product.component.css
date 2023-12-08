@@ -1,0 +1,8 @@
+.btn-custom {
+    background-color: #ff5733; /* Your desired color */
+    color: #fff; /* Text color */
+}
+
+.btn-custom:hover {
+    background-color: #d44222; /* Hover color */
+}

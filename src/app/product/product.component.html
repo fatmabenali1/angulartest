@@ -1,0 +1,29 @@
+<div class="product-list">
+    <h2>Product List</h2>
+    <a class="btn btn-success add-product-link" routerLinkActivate="active" routerLink="/add">Add Product</a>
+
+    <table class="table table-bordered product-table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Quantite</th>
+                <th>Aime</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let produit of listProduit; let i=index">
+                <td>{{ produit.id }}</td>
+                <td>{{ produit.title }}</td>
+                <td>{{ produit.price }}</td>
+                <td>{{ produit.quantity }}</td>
+                <td>{{ produit.like }}</td>
+                <td>
+                    <button [routerLink]="[produit.id]" class="btn btn-custom show-button" (click)="show()">Show</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
